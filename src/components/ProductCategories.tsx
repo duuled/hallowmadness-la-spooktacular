@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/halloween-button";
+import { useNavigate } from "react-router-dom";
 import showcaseImage from "@/assets/costumes-showcase.jpg";
 
 const categories = [
@@ -31,6 +32,8 @@ const categories = [
 ];
 
 export default function ProductCategories() {
+  const navigate = useNavigate();
+
   return (
     <section id="products" className="py-20 relative">
       {/* Background Pattern */}
@@ -61,7 +64,11 @@ export default function ProductCategories() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-              <Button variant="halloween" size="lg">
+              <Button 
+                variant="halloween" 
+                size="lg"
+                onClick={() => navigate('/products')}
+              >
                 🛒 Shop All Categories
               </Button>
             </div>
@@ -102,23 +109,14 @@ export default function ProductCategories() {
               </div>
 
               <div className="space-y-3">
-                <Button variant="spooky" className="w-full" size="lg">
+                <Button 
+                  variant="spooky" 
+                  className="w-full" 
+                  size="lg"
+                  onClick={() => navigate('/products')}
+                >
                   Shop {category.title}
                 </Button>
-                {category.amazonLink && (
-                  <div className="flex gap-2">
-                    <Button variant="phantom" size="sm" className="flex-1" asChild>
-                      <a href={category.amazonLink} target="_blank" rel="noopener noreferrer">
-                        🛒 Amazon
-                      </a>
-                    </Button>
-                    <Button variant="phantom" size="sm" className="flex-1" asChild>
-                      <a href={category.tiktokLink} target="_blank" rel="noopener noreferrer">
-                        📱 TikTok
-                      </a>
-                    </Button>
-                  </div>
-                )}
               </div>
             </div>
           ))}
