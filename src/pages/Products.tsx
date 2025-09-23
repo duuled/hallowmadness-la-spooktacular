@@ -301,7 +301,7 @@ export default function Products() {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    🛒 Buy on Amazon
+                    BUY NOW!🕸️
                   </a>
                 </Button>
               </div>
