@@ -2,66 +2,72 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/halloween-button";
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from "lucide-react";
+import flintstoneFredeImage from "@/assets/flintstone-fred-costume.jpg";
+import flintstoneWilmaImage from "@/assets/flintstone-wilma-costume.jpg";
+import pumpkinPonchoImage from "@/assets/pumpkin-poncho-costume.jpg";
+import minionCostumeImage from "@/assets/minion-costume-set.jpg";
+import crowCostumeImage from "@/assets/crow-costume-set.jpg";
+import minionAccessoriesImage from "@/assets/minion-accessories-set.jpg";
 
 const products = [
   {
-    id: 'gorilla-deluxe',
-    name: 'Deluxe Gorilla Costume',
+    id: 'flintstone-fred',
+    name: 'Fred Flintstone Adult Costume',
     category: 'adult',
-    price: '$79.99',
-    image: '/placeholder.svg',
-    description: 'Premium quality gorilla costume with realistic fur texture and muscular chest piece.',
-    features: ['Realistic fur texture', 'Muscular chest piece', 'Full mask included', 'Adult sizes S-XXL'],
+    price: '$18.89',
+    image: flintstoneFredeImage,
+    description: 'Transform into your favorite caveman with this classic orange Flintstone costume perfect for couples or solo Halloween fun!',
+    features: ['Orange spotted tunic', 'Blue necktie included', 'Comfortable fit', 'Couples costume available'],
     affiliateLink: 'https://amzn.to/3Kf5VB7'
   },
   {
-    id: 'scary-clown',
-    name: 'Terrifying Clown Costume',
+    id: 'flintstone-wilma',
+    name: 'Wilma Flintstone Adult Costume',
     category: 'adult',
-    price: '$69.99',
-    image: '/placeholder.svg',
-    description: 'Spine-chilling clown costume guaranteed to scare trick-or-treaters.',
-    features: ['Professional quality', 'Detailed mask', 'Complete outfit', 'One size fits most'],
+    price: '$18.99',
+    image: flintstoneWilmaImage,
+    description: 'Complete your Stone Age look with this elegant white Wilma costume featuring signature stone-age style details.',
+    features: ['White stone-age dress', 'Signature necklace', 'Comfortable design', 'Perfect for couples'],
     affiliateLink: 'https://amzn.to/3Iw44r8'
   },
   {
-    id: 'vampire-classic',
-    name: 'Classic Vampire Costume',
+    id: 'pumpkin-poncho',
+    name: 'Pumpkin Poncho Halloween Costume',
     category: 'adult',
-    price: '$89.99',
-    image: '/placeholder.svg',
-    description: 'Elegant vampire costume with high-quality cape and accessories.',
-    features: ['Velvet cape', 'Gothic vest', 'Vampire fangs', 'Multiple sizes'],
+    price: '$13.99',
+    image: pumpkinPonchoImage,
+    description: 'Adorable 3-piece pumpkin costume set with poncho, beret, and candy bag - perfect for Halloween festivities!',
+    features: ['Orange pumpkin poncho', 'Matching knit beret', 'Candy bag included', 'Easy to wear design'],
     affiliateLink: 'https://amzn.to/42u6cXl'
   },
   {
-    id: 'witch-deluxe',
-    name: 'Deluxe Witch Costume',
+    id: 'minion-costume',
+    name: 'Minion Halloween Costume Set',
     category: 'adult',
-    price: '$74.99',
-    image: '/placeholder.svg',
-    description: 'Enchanting witch costume with authentic details and accessories.',
-    features: ['Flowing robe', 'Witch hat included', 'Belt and accessories', 'Comfortable fit'],
+    price: '$14.99',
+    image: minionCostumeImage,
+    description: 'Complete Minion transformation with goggles, yellow beanie, blue dress, suspenders and gloves!',
+    features: ['Steampunk goggles', 'Yellow beanie hat', 'Blue tutu skirt', 'Black gloves included'],
     affiliateLink: 'https://amzn.to/3KfGYWk'
   },
   {
-    id: 'superhero-kids',
-    name: 'Kids Superhero Costume',
-    category: 'kids',
-    price: '$39.99',
-    image: '/placeholder.svg',
-    description: 'Action-packed superhero costume for kids who want to save the day.',
-    features: ['Durable fabric', 'Easy to wear', 'Machine washable', 'Kids sizes 4-12'],
+    id: 'crow-costume',
+    name: 'Gothic Crow Halloween Costume',
+    category: 'adult',
+    price: '$32.99',
+    image: crowCostumeImage,
+    description: '6-piece dramatic crow costume with black feather wings, mask, and gothic accessories for a haunting Halloween look.',
+    features: ['Black feather wings', 'Crow mask included', 'Gothic necklace', 'Feather cuffs'],
     affiliateLink: 'https://amzn.to/4nFcLyc'
   },
   {
-    id: 'princess-kids',
-    name: 'Magical Princess Costume',
+    id: 'minion-accessories',
+    name: 'Minion Costume Accessories Kit',
     category: 'kids',
-    price: '$44.99',
-    image: '/placeholder.svg',
-    description: 'Beautiful princess costume that makes every little girl feel royal.',
-    features: ['Sparkly details', 'Comfortable design', 'Crown included', 'Toddler to teen sizes'],
+    price: '$8.99',
+    image: minionAccessoriesImage,
+    description: '3-piece accessory set with vintage goggles, yellow beanie, and black gloves - perfect for DIY Minion costumes!',
+    features: ['Vintage steampunk goggles', 'Yellow knit beanie', 'Black costume gloves', 'Suitable for all ages'],
     affiliateLink: 'https://amzn.to/46RRf3C'
   }
 ];
