@@ -68,8 +68,8 @@ export default function ContactSection() {
                 <div className="flex items-center">
                   <span className="text-primary mr-3">✉️</span>
                   <div>
-                    <a href="mailto:info@hallowmadness.com" className="font-semibold hover:text-primary transition-colors">
-                      info@hallowmadness.com
+                    <a href="mailto:hallowmadness@hallowmadness.store" className="font-semibold hover:text-primary transition-colors">
+                      hallowmadness@hallowmadness.store
                     </a>
                   </div>
                 </div>
@@ -117,6 +117,10 @@ export default function ContactSection() {
                 <div className="flex items-center">
                   <span className="text-primary mr-2">🚚</span>
                   Playa del Rey
+                </div>
+                <div className="flex items-center">
+                  <span className="text-primary mr-2">🚚</span>
+                  Redondo Beach
                 </div>
               </div>
               <p className="mt-4 text-xs text-muted-foreground">

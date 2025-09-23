@@ -8,7 +8,9 @@ const categories = [
     description: 'Sophisticated & scary costumes for grown-up Halloween fun',
     emoji: '🧛‍♂️',
     features: ['Premium Materials', 'Perfect Fit', 'Trendy Designs'],
-    popular: ['Vampires', 'Witches', 'Superheroes', 'Classic Monsters']
+    popular: ['Vampires', 'Witches', 'Superheroes', 'Classic Monsters'],
+    amazonLink: 'https://amzn.to/47UFgTY',
+    tiktokLink: 'https://www.tiktok.com/t/ZTHnKQoHw28Sr-bGJFE/'
   },
   {
     id: 'kids',
@@ -25,14 +27,6 @@ const categories = [
     emoji: '💑',
     features: ['Coordinated Designs', 'Multiple Sizes', 'Photo-Ready'],
     popular: ['Movie Duos', 'Historical Pairs', 'Pop Culture', 'Classic Couples']
-  },
-  {
-    id: 'groups',
-    title: 'Group Costumes',
-    description: 'Epic group themes for parties, friends & family events',
-    emoji: '👨‍👩‍👧‍👦',
-    features: ['Bulk Pricing', 'Size Variety', 'Team Themes'],
-    popular: ['Movie Casts', 'Decades Themes', 'Fantasy Groups', 'TV Shows']
   }
 ];
 
@@ -75,7 +69,7 @@ export default function ProductCategories() {
         </div>
 
         {/* Category Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
           {categories.map((category) => (
             <div key={category.id} className="spooky-card hover-float group">
               <div className="text-center mb-6">
@@ -107,9 +101,25 @@ export default function ProductCategories() {
                 </div>
               </div>
 
-              <Button variant="spooky" className="w-full" size="lg">
-                Shop {category.title}
-              </Button>
+              <div className="space-y-3">
+                <Button variant="spooky" className="w-full" size="lg">
+                  Shop {category.title}
+                </Button>
+                {category.amazonLink && (
+                  <div className="flex gap-2">
+                    <Button variant="phantom" size="sm" className="flex-1" asChild>
+                      <a href={category.amazonLink} target="_blank" rel="noopener noreferrer">
+                        🛒 Amazon
+                      </a>
+                    </Button>
+                    <Button variant="phantom" size="sm" className="flex-1" asChild>
+                      <a href={category.tiktokLink} target="_blank" rel="noopener noreferrer">
+                        📱 TikTok
+                      </a>
+                    </Button>
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
@@ -118,12 +128,13 @@ export default function ProductCategories() {
         <div className="mt-16 text-center">
           <div className="spooky-card max-w-4xl mx-auto">
             <h3 className="font-spooky text-3xl mb-4 text-secondary-glow">Serving West LA's Spookiest Neighborhoods</h3>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-sm">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
               <div className="text-primary font-semibold">📍 Marina del Rey</div>
               <div className="text-primary font-semibold">📍 Westchester</div>
               <div className="text-primary font-semibold">📍 Venice Beach</div>
               <div className="text-primary font-semibold">📍 Santa Monica</div>
               <div className="text-primary font-semibold">📍 West LA</div>
+              <div className="text-primary font-semibold">📍 Redondo Beach</div>
             </div>
             <p className="mt-4 text-muted-foreground">Fast local delivery & in-store pickup available!</p>
           </div>

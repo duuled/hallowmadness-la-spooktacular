@@ -3,18 +3,19 @@ import HeroSection from "@/components/HeroSection";
 import ProductCategories from "@/components/ProductCategories";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
+import MissionSection from "@/components/MissionSection";
 
 const Index = () => {
   useEffect(() => {
     // Set page title for SEO
-    document.title = "Hallow Madness | Premium Halloween Costumes in Marina del Rey & West LA";
+    document.title = "Hallow Madness | Premium Halloween Costumes Marina del Rey, West LA, Redondo Beach";
     
     // Add structured data for local business
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Hallow Madness",
-      "description": "Premium Halloween costumes for adults, kids, couples & groups in Marina del Rey, Venice, Santa Monica, Westchester & West LA",
+      "description": "Premium Halloween costume store serving Marina del Rey, Westside Los Angeles & Redondo Beach with the best costumes and spooky Halloween spirit",
       "image": "https://hallowmadness.com/logo.jpg",
       "address": {
         "@type": "PostalAddress",
@@ -25,11 +26,12 @@ const Index = () => {
         "addressCountry": "US"
       },
       "telephone": "(310) SPOOKY-1",
-      "email": "info@hallowmadness.com",
+      "email": "hallowmadness@hallowmadness.store",
       "url": "https://hallowmadness.com",
       "sameAs": [
         "https://facebook.com/hallowmadness",
-        "https://instagram.com/hallowmadness_la"
+        "https://instagram.com/hallowmadness_la",
+        "https://www.tiktok.com/t/ZTHnKQoHw28Sr-bGJFE/"
       ],
       "openingHours": [
         "Mo-Su 10:00-22:00"
@@ -40,7 +42,8 @@ const Index = () => {
         "Venice Beach",
         "Santa Monica",
         "West Los Angeles",
-        "Playa del Rey"
+        "Playa del Rey",
+        "Redondo Beach"
       ],
       "priceRange": "$$",
       "acceptsReservations": true
@@ -63,11 +66,11 @@ const Index = () => {
     <div className="min-h-screen">
       {/* SEO Header Content */}
       <header className="sr-only">
-        <h1>Hallow Madness - Premium Halloween Costumes in Marina del Rey, Venice, Santa Monica & West LA</h1>
+        <h1>Hallow Madness - Premium Halloween Costumes in Marina del Rey, Westside LA & Redondo Beach</h1>
         <p>
-          Shop unique, high-quality Halloween costumes for adults, kids, couples, and groups. 
-          Serving Marina del Rey, Westchester, Venice Beach, Santa Monica, and West Los Angeles 
-          with fast local delivery and expert costume consultation.
+          Shop the best Halloween costumes for adults, kids, couples at Marina del Rey's premier costume store. 
+          Serving Westside Los Angeles, Redondo Beach, Venice, Santa Monica, and Westchester 
+          with high-quality costumes, fast local delivery and spooky Halloween spirit guaranteed.
         </p>
       </header>
 
@@ -88,6 +91,11 @@ const Index = () => {
 
       {/* Product Categories Section */}
       <main>
+        {/* Mission Section */}
+        <section id="mission" aria-labelledby="mission-heading">
+          <MissionSection />
+        </section>
+
         <section id="products" aria-labelledby="products-heading">
           <ProductCategories />
         </section>
@@ -114,7 +122,7 @@ const Index = () => {
                 123 Spooky Lane<br />
                 Marina del Rey, CA 90292<br />
                 <a href="tel:+1-310-SPOOKY1" className="hover:text-primary">(310) SPOOKY-1</a><br />
-                <a href="mailto:info@hallowmadness.com" className="hover:text-primary">info@hallowmadness.com</a>
+                <a href="mailto:hallowmadness@hallowmadness.store" className="hover:text-primary">hallowmadness@hallowmadness.store</a>
               </address>
             </div>
 
@@ -128,6 +136,7 @@ const Index = () => {
                 <li>Santa Monica Costume Rental</li>
                 <li>West LA Halloween Outfits</li>
                 <li>Playa del Rey Costume Delivery</li>
+                <li>Redondo Beach Halloween Store</li>
               </ul>
             </div>
 
@@ -148,8 +157,8 @@ const Index = () => {
           <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
             <p>&copy; 2024 Hallow Madness. All rights reserved. | Premium Halloween costumes in West LA since 2020</p>
             <p className="mt-2">
-              Serving Marina del Rey, Westchester, Venice, Santa Monica, West LA, and surrounding areas with 
-              the finest selection of Halloween costumes, accessories, and party supplies.
+              Serving Marina del Rey, Westchester, Venice, Santa Monica, West LA, Redondo Beach and surrounding areas with 
+              the finest selection of Halloween costumes, accessories, and party supplies. Bringing spooky Halloween spirit to the Westside!
             </p>
           </div>
         </div>
