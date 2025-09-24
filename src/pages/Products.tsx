@@ -4,21 +4,21 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from "lucide-react";
 import flintstoneFredeImage from "@/assets/flintstone-fred-costume.jpg";
 import flintstoneWilmaImage from "@/assets/flintstone-wilma-costume.jpg";
-import pumpkinPonchoImage from "@/assets/pumpkin-poncho-costume.jpg";
-import minionCostumeImage from "@/assets/minion-costume-set.jpg";
-import crowCostumeImage from "@/assets/crow-costume-set.jpg";
-import minionAccessoriesImage from "@/assets/minion-accessories-set.jpg";
-import grimReaperImage from "@/assets/grim-reaper-inflatable.jpg";
-import inflatableTrexImage from "@/assets/inflatable-trex.jpg";
-import skeletonCarryMeImage from "@/assets/skeleton-carry-me.jpg";
-import ledSkeletonDragonImage from "@/assets/led-skeleton-dragon.jpg";
-import ledSkeletonInflatableImage from "@/assets/led-skeleton-inflatable.jpg";
-import hoodedRobeCloakImage from "@/assets/hooded-robe-cloak.jpg";
-import inflatableChickenImage from "@/assets/inflatable-chicken.jpg";
-import alienFunnyMaskImage from "@/assets/alien-funny-mask.jpg";
-import ledSkeletonMaskImage from "@/assets/led-skeleton-mask.jpg";
-import skeletonJumpsuitWomenImage from "@/assets/skeleton-jumpsuit-women.jpg";
-import skeletonUnicornInflatableImage from "@/assets/skeleton-unicorn-inflatable.jpg";
+import pumpkinPonchoImage from "@/assets/pumpkin-poncho-costume-hq.jpg";
+import minionCostumeImage from "@/assets/minion-costume-set-hq.jpg";
+import crowCostumeImage from "@/assets/crow-costume-set-hq.jpg";
+import minionAccessoriesImage from "@/assets/minion-accessories-set-hq.jpg";
+import grimReaperImage from "@/assets/grim-reaper-inflatable-hq.jpg";
+import inflatableTrexImage from "@/assets/inflatable-trex-hq.jpg";
+import skeletonCarryMeImage from "@/assets/skeleton-carry-me-hq.jpg";
+import ledSkeletonDragonImage from "@/assets/led-skeleton-dragon-hq.jpg";
+import ledSkeletonInflatableImage from "@/assets/led-skeleton-inflatable-hq.jpg";
+import hoodedRobeCloakImage from "@/assets/hooded-robe-cloak-hq.jpg";
+import inflatableChickenImage from "@/assets/inflatable-chicken-hq.jpg";
+import alienFunnyMaskImage from "@/assets/alien-funny-mask-hq.jpg";
+import ledSkeletonMaskImage from "@/assets/led-skeleton-mask-hq.jpg";
+import skeletonJumpsuitWomenImage from "@/assets/skeleton-jumpsuit-women-hq.jpg";
+import skeletonUnicornInflatableImage from "@/assets/skeleton-unicorn-inflatable-hq.jpg";
 
 const products = [
   // Adult Costumes
