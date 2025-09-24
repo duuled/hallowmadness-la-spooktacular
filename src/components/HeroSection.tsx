@@ -38,7 +38,7 @@ export default function HeroSection() {
         
         <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-foreground/90 max-w-4xl mx-auto leading-relaxed">
           Premium Halloween costumes for the most <span className="text-primary font-semibold">spook-tacular</span> celebrations in{" "}
-          <span className="text-secondary-glow font-semibold">Marina del Rey, Venice, Santa Monica & West LA</span>
+          <span className="text-secondary-glow font-semibold">Los Angeles & beyond</span>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">

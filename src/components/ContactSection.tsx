@@ -34,7 +34,7 @@ export default function ContactSection() {
             <span className="text-primary">Contact</span> <span className="text-secondary-glow">Us</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to find your perfect Halloween costume? Get in touch with West LA's premiere costume experts!
+            Ready to find your perfect Halloween costume? Get in touch with Los Angeles' premiere costume experts!
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function ContactSection() {
                     <div className="font-semibold">Hallow Madness</div>
                     <div className="text-muted-foreground text-sm">
                       123 Spooky Lane<br />
-                      Marina del Rey, CA 90292
+                      Los Angeles, CA 90210
                     </div>
                   </div>
                 </div>
@@ -92,39 +92,32 @@ export default function ContactSection() {
 
             {/* Service Areas */}
             <div className="spooky-card">
-              <h3 className="font-spooky text-2xl mb-4 text-accent-glow">Delivery Areas</h3>
-              <div className="grid grid-cols-2 gap-3 text-sm">
+              <h3 className="font-spooky text-2xl mb-4 text-accent-glow">Shipping & Delivery</h3>
+              <div className="space-y-3 text-sm">
                 <div className="flex items-center">
                   <span className="text-primary mr-2">🚚</span>
-                  Marina del Rey
+                  <div>
+                    <div className="font-semibold">Greater Los Angeles Area</div>
+                    <div className="text-xs text-muted-foreground">Same-day delivery available</div>
+                  </div>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-primary mr-2">🚚</span>
-                  Westchester
+                  <span className="text-primary mr-2">📦</span>
+                  <div>
+                    <div className="font-semibold">Nationwide Shipping</div>
+                    <div className="text-xs text-muted-foreground">2-5 business days</div>
+                  </div>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-primary mr-2">🚚</span>
-                  Venice Beach
-                </div>
-                <div className="flex items-center">
-                  <span className="text-primary mr-2">🚚</span>
-                  Santa Monica
-                </div>
-                <div className="flex items-center">
-                  <span className="text-primary mr-2">🚚</span>
-                  West LA
-                </div>
-                <div className="flex items-center">
-                  <span className="text-primary mr-2">🚚</span>
-                  Playa del Rey
-                </div>
-                <div className="flex items-center">
-                  <span className="text-primary mr-2">🚚</span>
-                  Redondo Beach
+                  <span className="text-primary mr-2">🌍</span>
+                  <div>
+                    <div className="font-semibold">International Shipping</div>
+                    <div className="text-xs text-muted-foreground">5-10 business days</div>
+                  </div>
                 </div>
               </div>
               <p className="mt-4 text-xs text-muted-foreground">
-                Same-day delivery available for orders placed before 3pm!
+                Free shipping on orders over $75 within the US!
               </p>
             </div>
           </div>

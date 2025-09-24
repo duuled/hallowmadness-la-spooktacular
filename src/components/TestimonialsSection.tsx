@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
             <span className="text-primary">Spook-tacular</span> <span className="text-secondary-glow">Reviews</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            See what our West LA neighbors are saying about their Hallow Madness experience
+            See what our customers worldwide are saying about their Hallow Madness experience
           </p>
         </div>
 
@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
               <div className="text-center">
                 <div className="text-3xl mb-2">🚚</div>
                 <div className="font-semibold text-primary">Fast Delivery</div>
-                <div className="text-xs text-muted-foreground">Same-day in West LA</div>
+                <div className="text-xs text-muted-foreground">Fast worldwide shipping</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl mb-2">💰</div>
@@ -98,7 +98,7 @@ export default function TestimonialsSection() {
               <div className="text-center">
                 <div className="text-3xl mb-2">🎯</div>
                 <div className="font-semibold text-primary">Local Experts</div>
-                <div className="text-xs text-muted-foreground">West LA Halloween pros</div>
+                <div className="text-xs text-muted-foreground">Halloween experts worldwide</div>
               </div>
             </div>
           </div>

@@ -50,7 +50,7 @@ export default function ProductCategories() {
             <span className="text-primary">Spook-tacular</span> <span className="text-secondary-glow">Collections</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From spine-chilling scares to adorable treats, we have the perfect costume for every Halloween celebration in West LA
+            From spine-chilling scares to adorable treats, we have the perfect costume for every Halloween celebration worldwide
           </p>
         </div>
 
@@ -122,19 +122,28 @@ export default function ProductCategories() {
           ))}
         </div>
 
-        {/* Local Service Areas */}
+        {/* Global Service Areas */}
         <div className="mt-16 text-center">
           <div className="spooky-card max-w-4xl mx-auto">
-            <h3 className="font-spooky text-3xl mb-4 text-secondary-glow">Serving West LA's Spookiest Neighborhoods</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
-              <div className="text-primary font-semibold">📍 Marina del Rey</div>
-              <div className="text-primary font-semibold">📍 Westchester</div>
-              <div className="text-primary font-semibold">📍 Venice Beach</div>
-              <div className="text-primary font-semibold">📍 Santa Monica</div>
-              <div className="text-primary font-semibold">📍 West LA</div>
-              <div className="text-primary font-semibold">📍 Redondo Beach</div>
+            <h3 className="font-spooky text-3xl mb-4 text-secondary-glow">Bringing Halloween Magic Worldwide</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+              <div className="text-center">
+                <div className="text-2xl mb-2">🏙️</div>
+                <div className="text-primary font-semibold">Greater Los Angeles</div>
+                <div className="text-xs text-muted-foreground">Same-day delivery available</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl mb-2">🇺🇸</div>
+                <div className="text-primary font-semibold">Nationwide USA</div>
+                <div className="text-xs text-muted-foreground">Fast 2-5 day shipping</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl mb-2">🌍</div>
+                <div className="text-primary font-semibold">International</div>
+                <div className="text-xs text-muted-foreground">Worldwide shipping available</div>
+              </div>
             </div>
-            <p className="mt-4 text-muted-foreground">Fast local delivery & in-store pickup available!</p>
+            <p className="mt-4 text-muted-foreground">Premium costumes delivered to your door wherever you are!</p>
           </div>
         </div>
       </div>

@@ -15,9 +15,9 @@ export default function MissionSection() {
               </p>
               
               <p>
-                Located in the heart of <span className="text-accent-glow font-semibold">Marina del Rey</span>, we proudly serve the entire 
-                <span className="text-secondary-glow font-semibold"> Westside Los Angeles area</span> and 
-                <span className="text-accent-glow font-semibold"> Redondo Beach</span> with the most unique, trendy, and high-quality Halloween costumes you'll find anywhere.
+                Based in <span className="text-accent-glow font-semibold">Los Angeles</span>, we proudly serve the entire 
+                <span className="text-secondary-glow font-semibold"> Greater Los Angeles area</span> and ship 
+                <span className="text-accent-glow font-semibold"> worldwide</span> with the most unique, trendy, and high-quality Halloween costumes you'll find anywhere.
               </p>
               
               <p>
