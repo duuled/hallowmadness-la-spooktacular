@@ -4,8 +4,13 @@ import ProductCategories from "@/components/ProductCategories";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import MissionSection from "@/components/MissionSection";
+import PersonalizedRecommendations from "@/components/PersonalizedRecommendations";
+import NewsletterSignup from "@/components/NewsletterSignup";
+import { useBrowsingTracking } from "@/hooks/useBrowsingTracking";
 
 const Index = () => {
+  useBrowsingTracking();
+  
   useEffect(() => {
     // Set page title for SEO
     document.title = "Hallow Madness | Premium Halloween Costumes Los Angeles & Worldwide Shipping";
@@ -94,6 +99,16 @@ const Index = () => {
 
         <section id="products" aria-labelledby="products-heading">
           <ProductCategories />
+        </section>
+
+        {/* AI Personalized Recommendations Section */}
+        <section id="recommendations" aria-labelledby="recommendations-heading">
+          <PersonalizedRecommendations />
+        </section>
+
+        {/* Newsletter Signup Section */}
+        <section id="newsletter" aria-labelledby="newsletter-heading">
+          <NewsletterSignup />
         </section>
 
         {/* Testimonials Section */}

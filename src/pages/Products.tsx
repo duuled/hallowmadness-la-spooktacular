@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/halloween-button";
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from "lucide-react";
+import { useBrowsingTracking } from "@/hooks/useBrowsingTracking";
 import flintstoneFredeImage from "@/assets/flintstone-fred-costume-hq.jpg";
 import flintstoneWilmaImage from "@/assets/flintstone-wilma-costume-hq.jpg";
 import pumpkinPonchoImage from "@/assets/pumpkin-poncho-costume-hq.jpg";
@@ -206,6 +207,7 @@ const categories = [
 ];
 
 export default function Products() {
+  useBrowsingTracking();
   const [selectedCategory, setSelectedCategory] = useState('all');
   const navigate = useNavigate();
 
