@@ -21,7 +21,7 @@ const Index = () => {
       "@type": "LocalBusiness",
       "name": "Hallow Madness",
       "description": "Premium Halloween costume store based in Los Angeles serving customers worldwide with the best costumes and spooky Halloween spirit",
-      "image": "https://hallowmadness.com/logo.jpg",
+      "image": "https://hallowmadness-la-spooktacular.lovable.app/__l5e/assets-v1/1a54733b-7c84-4033-9df1-ad18bb9d179f/hallow-madness-logo.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "123 Spooky Lane",
