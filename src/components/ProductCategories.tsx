@@ -9,8 +9,8 @@ const categories = [
     description: 'Sophisticated & scary costumes for grown-up Halloween fun',
     emoji: '🧛‍♂️',
     features: ['Premium Materials', 'Perfect Fit', 'Trendy Designs'],
-    popular: ['Vampires', 'Witches', 'Superheroes', 'Classic Monsters'],
-    amazonLink: 'https://amzn.to/47UFgTY',
+    popular: ['Ghost Face Scream', 'Police Officer Cop', '72" Ice Dragon', 'Skeleton Jumpsuit'],
+    amazonLink: 'https://amzn.to/4gQND5F',
     tiktokLink: 'https://www.tiktok.com/t/ZTHnKQoHw28Sr-bGJFE/'
   },
   {
@@ -19,7 +19,7 @@ const categories = [
     description: 'Safe, fun & adorable costumes for little trick-or-treaters',
     emoji: '👻',
     features: ['Child-Safe Materials', 'Easy to Wear', 'Comfortable Fit'],
-    popular: ['Princesses', 'Superheroes', 'Animals', 'Disney Characters']
+    popular: ['Ghost Face Kids', 'Spider-Man Zentai', 'Minions Kit', 'Superhero Masks']
   },
   {
     id: 'couples',
@@ -27,7 +27,7 @@ const categories = [
     description: 'Matching & coordinated costumes for romantic Halloween',
     emoji: '💑',
     features: ['Coordinated Designs', 'Multiple Sizes', 'Photo-Ready'],
-    popular: ['Movie Duos', 'Historical Pairs', 'Pop Culture', 'Classic Couples']
+    popular: ['The Flintstones', 'Police Officer & Cop', 'The Incredibles Duo', 'Barbie & Ken']
   }
 ];
 

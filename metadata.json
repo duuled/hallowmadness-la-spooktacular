@@ -1,0 +1,8 @@
+{
+  "name": "Hallow Madness",
+  "description": "Premium Halloween costumes in Marina del Rey, Westside LA & Redondo Beach",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
